@@ -1,0 +1,100 @@
+:root{
+    --mainc-black-color:#1d1d1d;
+    --main-black-color2:#242424;
+    --main-black-color3:#161616;
+    --gray-color:#ececec;
+    --blue-color:#3c7cfa;
+    --top-news-background-color:#f9f9f9;
+    --subscribe-button-color:#263070;
+    --footer-font-color:#8e8e8e;
+}
+
+.hide-text{
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
+
+.unit-link{
+    display: block;
+    position: absolute;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 52px;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 6px 0px rgb(207, 207, 207);
+    border-bottom: #e4e4e4;
+  }
+
+
+  header  svg {
+    width: 149px;
+    height: 46px;
+  }
+
+  .header-name-wrapper{
+    display: flex;
+    gap: 32px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.header-name-wrapper a {
+      color: var(--mainc-black-color);
+  }
+
+  .icon-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .icon-wrapper svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  header nav {
+    display: flex;
+  }
+
+  .icon-wrapper >li:last-child svg{
+    width: 40px;
+    height: 40px;
+  }
+
+  .news-rooom-subscribe-button{
+    background-color: var(--subscribe-button-color);
+    position: relative;
+    border-radius: 20px;
+  }
+
+  .news-rooom-subscribe-button > a{
+    color: #f9f9f9;
+    align-items: center;
+  }
+
+ 
+
+
+
+
+
+
+
+
+  
+
+
