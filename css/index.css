@@ -90,6 +90,7 @@
   nav{
     display: flex;
     align-items: center;
+    gap:16px
   }
 
   .mail-lang-wrapper{
@@ -101,35 +102,94 @@
   }
 
   #slide-banner{
-    height: 304px;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
+    margin-bottom: 64px;
   }
   
   .main-wrapper{
     display: flex;
-    border: 2px solid black;
     border-radius: 16px;
     box-sizing: border-box;
+    overflow: hidden;
+    width:1200px;
+    max-height: 400px;
+    box-shadow: 0px 8px 18px 0px rgb(91, 91, 91, 0.14);
+  }
+  .slide-banner-wrapper{
+    width:1200px;
+    max-height: 400px;
+    position: relative;
   }
 
   .img-container{
-    background-color: rebeccapurple;
-    width: 457px;
-    height: 304px;
+    width: 100%;
     box-sizing: border-box;
   }
 
   .img-information{
-    background-color: #3c7cfa;
-    width: 457px;
-    height: 304px;
+    width: 100%;
     box-sizing: border-box;
+    margin: 0 auto;
+    padding: 32px;
   }
 
+  .information-wrapper > h3{
+    font-size:33px;
+    font-weight: bold;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+  
+  .information-wrapper p{
+    font-size: 16px;
+    line-height: 24px;
+    
+  }
 
+  .information-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 
+  .before-img{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 18px 0px rgb(91, 91, 91, 0.14);
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 80%;
+  }
+
+  .after-img{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 18px 0px rgb(91, 91, 91, 0.14);
+    background-color: #fff;
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translate(50%, -50%);
+    opacity: 80%;
+  }
+
+  .navigation-bar{
+    width: 3px;
+    height: 1px;
+    background-color: #ececec;
+  }
+
+  #news > h2{
+    font-size: 32px;
+    font-weight: bold;
+  }
 
 
 
@@ -148,6 +208,19 @@
       display: flex;
     }
     
+  }
+
+  @media screen and (max-width:1024px){
+    .mail-lang-wrapper{
+      display: none;
+    }
+    nav:last-child  a > svg{
+      width: 49px;
+      height: 49px;
+    }
+    .header-name-wrapper{
+      display: none;
+    }
   }
 
 
