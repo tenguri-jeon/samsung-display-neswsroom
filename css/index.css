@@ -294,6 +294,7 @@
   }
 
   @media screen and (max-width:1240px) {
+    /* 패딩 줄어드는거 처리해줄 것. */
     .icon-wrapper{
       display: none;
     }
