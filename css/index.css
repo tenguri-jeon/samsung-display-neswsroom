@@ -213,7 +213,7 @@
     box-sizing: border-box;
   }
 
-  .img-container-wrapper{
+  .img-container-monitor{
     display: flex;
     overflow: hidden;
     width: 600px;
@@ -227,6 +227,10 @@
   }
 
   .img-information-wrapper{
+    display: flex;
+  }
+
+  .img-information-monitor{
     display: flex;
     overflow: hidden;
     width: 600px;
@@ -291,14 +295,77 @@
     background-color: #424242;
   }
 
-  #news > h2{
+  #new-news-area  h2{
     font-size: 32px;
     font-weight: bold;
+    padding-bottom: 64px;
+    text-align: center;
   }
 
+  #new-news-area{
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+  }
+
+  .news{
+    width: 362px;
+    margin-bottom: 40px;
+  }
+
+  .news p {
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 30px;
+  }
+
+  .news figure{
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 28px;
+  }
+
+  .news-container{
+    width: 795px;
+
+  }
+
+  .news img {
+    width: 100%;
+    height: 225px;
+    overflow: hidden;
+  }
+
+  .latese-news1{
+    display: flex;
+    gap: 32px;
+  }
   
+  .latest-news2{
+    display: flex;
+    gap: 32px;
+  }
 
+  .news-container-wrapper{
+    border-right: 1px solid rgb(194, 194, 194);
+  }
+  
+  .youtube figure{
+    border-radius: 20px;
+    overflow: hidden;
+    width: 362px;
+    height: 225px;
+    margin-bottom: 32px;
+  }
 
+  .youtube img{
+    width: 100%;
+  }
+
+  .youtube > p {
+    font-size: 20px;
+    font-weight: 550;
+  }
 
   
   @media screen and (max-width:1420px) {
