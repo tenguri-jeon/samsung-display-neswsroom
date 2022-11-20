@@ -306,11 +306,13 @@
     display: flex;
     justify-content: center;
     gap: 64px;
+    margin-bottom: 64px;
   }
 
   .news{
     width: 362px;
     margin-bottom: 40px;
+    position: relative;
   }
 
   .news p {
@@ -350,6 +352,10 @@
     border-right: 1px solid rgb(194, 194, 194);
   }
   
+  .youtube{
+    padding-bottom: 64px;
+  }
+
   .youtube figure{
     border-radius: 20px;
     overflow: hidden;
@@ -367,7 +373,95 @@
     font-weight: 550;
   }
 
+
+  .d-library{
+    background-color: #e8f9ef;
+    width: 362px;
+    height: 146px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .d-library:first-child{
+    background-color: #f1f8fe;
+    margin-bottom: 24px;
+  }
   
+  .d-library-text-box{
+    line-height: 24px;
+  }
+
+  .d-library-text-box > p{
+    color: var(--mainc-black-color);
+    font-size: 14px;
+  }
+
+  .d-library-text-box > p:first-child {
+    color: var(--blue-color);
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .bold{
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    position: relative;
+  }
+
+  .bold::after{
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid var(--mainc-black-color);
+    border-right: 1px solid var(--mainc-black-color);
+    rotate: 45deg;
+    transform: translate(50% ,50%);
+  }
+
+  #top-news-wrapper{
+    background-color: var(--top-news-background-color);
+  }
+
+  #top-news-wrapper > h3{
+    font-size: 34px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    padding: 64px 0px ;
+  }
+
+  .top-news-container{
+    width: 380px;
+    height: 458px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: 2px solid black;
+    overflow: hidden;
+  }
+
+  .top-news-container figure{
+    width: 380px;
+    height: 237px;
+  }
+
+  .top-news-container img {
+    width: 100%;
+  }
+
+  .top-news-container-wrapper{
+    display: flex;
+    flex-shrink: 0;
+  }
+  
+  .top-news-slidewapper{
+    margin: 0 auto;
+  }
+
   @media screen and (max-width:1420px) {
     #subcribe-newsroom{
       display: none;
