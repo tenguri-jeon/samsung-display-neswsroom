@@ -601,6 +601,8 @@
   .footer-wrapper{
     padding: 64px;
     display: flex;
+    justify-content: space-between;
+    padding: 64px;
   }
 
   .footer-logo-address-wrapper{
@@ -616,6 +618,10 @@
   .footer-logo-address-wrapper a{
     color: #fff;
     font-weight: 800;
+  }
+
+  .footer-sns-logo-wrapper{
+    display: flex;
   }
 
   @media screen and (max-width:1420px) {
