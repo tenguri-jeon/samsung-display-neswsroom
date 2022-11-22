@@ -239,6 +239,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 32px;
+    box-sizing: border-box;
   }
 
   .img-information-wrapper{
@@ -331,6 +332,7 @@
     position: relative;
   }
 
+
   .news p {
     font-size: 20px;
     font-weight: 550;
@@ -350,8 +352,11 @@
 
   .news img {
     width: 100%;
-    height: 225px;
     overflow: hidden;
+  }
+
+  .news img:hover{
+    background-color: #232323;
   }
 
   .latese-news1{
@@ -700,6 +705,12 @@
     .information-wrapper{
       padding: 23px 23px;
     }
+
+    #new-news-area{
+      padding: 82px 75px;
+    }
+    /* 최신기사 이미지 크기가 원본은 vw로 되어있는데 크기를 임의로 작게 다시 
+    지정해 줘야 할지 아니면 vw로 해야할지*/
     
   }
 
@@ -719,6 +730,21 @@
       display: block;
     }
      
+    }
+
+    @media screen and (max-width:750px) {
+      /* 글자가 잘리는거 해결 어떻게 하죠? */
+      .main-wrapper{
+        flex-direction: column;
+      }
+
+      .before-img{
+        display: none;
+      }
+
+      .after-img{
+        display: none;
+      }
     }
 
 
