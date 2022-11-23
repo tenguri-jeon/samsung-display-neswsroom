@@ -355,9 +355,16 @@
     overflow: hidden;
   }
 
-  .news img:hover{
-    background-color: #232323;
+  /* hover 하는방법 */
+  .news img{
+    transition: 0.4s;
   }
+
+  .news > .unit-link:hover + figure > img {
+    transform: scale(1.2);
+    filter: brightness(0.6);
+  }
+
 
   .latese-news1{
     display: flex;
@@ -734,6 +741,7 @@
 
     @media screen and (max-width:750px) {
       /* 글자가 잘리는거 해결 어떻게 하죠? */
+      /* calc / boxsizing borderbox 넣어주기 */
       .main-wrapper{
         flex-direction: column;
       }
@@ -747,6 +755,7 @@
       }
     }
 
+    
 
 
 
