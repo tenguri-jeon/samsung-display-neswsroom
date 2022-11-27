@@ -342,7 +342,7 @@
 
   #new-news-area{
     width: 1200px;
-    margin: 0 atuo;
+    margin: 0 auto;
   }
 
   #new-news-area  h2{
@@ -802,7 +802,7 @@
     }
 
     #new-news-area{
-      padding: 82px 75px;
+      padding: 64px;
       width: 100%;
       flex-direction: column;
     }
@@ -815,6 +815,7 @@
     }
     .news-container-wrapper{
       border-right: none;
+      padding-right: ;
     }
 
     .youtube  {
@@ -838,6 +839,18 @@
       gap: 24px;
     }
 
+    .top-news-container{
+      width: ;
+    }
+
+    .top-news-container-wrapper{
+      width: 100%;
+    }
+
+    .top-news-slidewapper{
+      width: 100%;
+      height: 100%;
+    }
 
   }
 
