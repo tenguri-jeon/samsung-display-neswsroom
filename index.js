@@ -32,17 +32,47 @@ function createBar() {
 
 
 // 인기기사
-const topnewsContainerwrapper = document.getElementsByClassName('top-news-container-wrapper');
 const topNewscontainer = document.getElementsByClassName('top-news-container');
-const slideCount = topNewscontainer[0].childElementCount;
-const leftbutton = document.getElementsByClassName('left');
-const rightbutton = document.getElementsByClassName('right');
+const leftbutton = document.getElementsByClassName('before-img');
+const rightbutton = document.getElementsByClassName('after-img');
+const topNewscontainerwrapper = document.getElementsByClassName('top-news-container-wrapper');
+const slideCount = topNewscontainerwrapper[0].childElementCount;
 
-for(let i = 0 ; i < topnewsContainerwrapper.length; i ++){
-    topNewscontainer[i].style.width = `${100/slideCount}%`
+leftrightbutton();
+
+function leftrightbutton () {
+    leftbutton.addEventListener('click', slideLeft);
+    rightbutton.addEventListener('click', slideRight);
+
+//슬라이드 레퍼의 크기 조정해 주기 => 화면 형성해 주기
+    for (let i = 0; i < topNewscontainerwrapper.length; i++) {
+        topNewscontainerwrapper[i].style.width = `${slideCount*100}%`
+    }
+//슬라이드 레퍼의 크기 조정해 주기 => calc(100 / 3과 같음)
+    for(let i = 0 ; i < topNewscontainer.length ; i ++) {
+        topNewscontainer[i].style.width = `${100/slideCount}%`
+    }
+
+function slideRight() {
+    index++;
+    if(index===slideCount){
+        index=0;
+    }
+    applySlide();
 }
 
-leftbutton.addEventListener('click' , ()=>{
-    topNewscontainer.style.transform = translateX(`${100/slideCount}%`)
-})
+function slideLeft() {
+    index--;
+    if(index === -1){
+        index = slideCount-1;
+    }
+    applySlide();
+}
+
+function applySlide() {
+    for (let i = 0; i < topNewscontainerwrapper.length; i++) {
+    topNewscontainerwrapper[i].style.transform = `translateX(calc( -100% / ${slideCount} * ${index}))`;
+}
+}
+}
 
