@@ -343,6 +343,7 @@
   #new-news-area{
     width: 1200px;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 
   #new-news-area  h2{
@@ -516,6 +517,8 @@
   #top-news-wrapper{
     background-color: var(--top-news-background-color);
     padding-bottom: 64px;
+    padding: 64px;
+    box-sizing: border-box;
   }
 
   #top-news-wrapper > h3{
@@ -676,6 +679,8 @@
 
   #subcribe-samsung-newsroom {
     padding-bottom: 128px;
+    padding: 64px;
+    box-sizing: border-box;
   }
 
   .subcribe-samsung-newsroom-svgwrapper{
@@ -893,6 +898,10 @@
       padding: 64px;
     }
 
+    .footer-information-text{
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   @media screen and (max-width:1024px){
