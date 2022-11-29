@@ -12,14 +12,10 @@ const slide = document.getElementsByClassName('top-news-container');
 const slideWrapper = document.getElementsByClassName('top-news-container-wrapper');
 const nextslide = document.getElementsByClassName('after-img');
 const beforeslide = document.getElementsByClassName('before-img');
-const publishslidewidth = document.querySelector('.publish-news-wrappe');
-const publistcontents = document.getElementsByClassName('publish-leftandright-wrapper');
 
 let count;
 let contents;
-
-chechWidth(3,slidecontainerWidth, slide);
-chechWidth(5, publishslidewidth, publistcontents);
+let slidehallwidth;
 
 
 nextslide[1].addEventListener('click', (e)=>{
@@ -28,6 +24,8 @@ nextslide[1].addEventListener('click', (e)=>{
     next();
 }
 );
+
+chechWidth(3, slidecontainerWidth, slide);
 
 function chechWidth(count, slidehallwidth, contents) {
     // 컨테이너 전체 크기
@@ -39,13 +37,13 @@ function chechWidth(count, slidehallwidth, contents) {
 }
 
 // 왜 안될까요 -> 클래스로 가져왔으면 몇번째 자식인지 적어줘야 함.
-function next(slidename , count) {
-    if(index < slidename[0].childElementCount-count){
+function next() {
+    if(index < slideWrapper[0].childElementCount-3){
         // 인덱스++띄어쓰기 하면 안됨
         index++;
     }
     // 클래스네임으로 가져왔기 때문에 [0]해줘야함
-    slidename[0].style.transform = `translateX(-${index * (slideWidth + 32)}px)`;
+    slideWrapper[0].style.transform = `translateX(-${index * (slideWidth + 32)}px)`;
 }
 
 
