@@ -829,6 +829,8 @@
     #new-news-area{
       width: 100%;
       flex-direction: column;
+      padding: 32px;
+      box-sizing: border-box;
     }
     
     .news-container{
