@@ -10,7 +10,7 @@ let index = 0;
 const slidecontainerWidth = document.getElementById('top-news-wrapper');
 const slide = document.getElementsByClassName('top-news-container');
 const slideWrapper = document.getElementsByClassName('top-news-container-wrapper');
-const count = 5;
+const count = 3;
 const nextslide = document.getElementsByClassName('after-img');
 
 // nextslide[1].addEventListener('click', next);
