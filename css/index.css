@@ -249,6 +249,10 @@
     display: block;
     background-color: #232323;
     transition: 0.2s;
+ }
+
+.active {
+  width: 100%;
 }
 
   .img-container figure{
@@ -259,12 +263,13 @@
 
   .img-container-wrapper{
     display: flex;
+    transition: 0.5s;
   }
 
   .img-container-monitor{
     display: flex;
     overflow: hidden;
-    width: 100%;
+    width: 600px;
   }
 
   .img-information{
@@ -330,6 +335,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     opacity: 80%;
+    z-index: 100;
   }
 
   .after-img{
@@ -343,6 +349,7 @@
     top: 50%;
     transform: translate(50%, -50%);
     opacity: 80%;
+    z-index: 100;
   }
 
   .progress-button-container {

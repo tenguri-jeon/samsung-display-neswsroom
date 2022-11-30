@@ -2,6 +2,8 @@
 
 //한개의 컨텐츠width는 -> (전체 크기 - (갭크기*슬라이드갯수-1))/슬라이드 갯수
 // (1200px - (32px*3-1))/3
+인기기사슬라이드();
+function 인기기사슬라이드(){
 
 let containerWidth;
 let slideWidth;
@@ -25,6 +27,13 @@ nextslide[1].addEventListener('click', (e)=>{
 }
 );
 
+beforeslide[1].addEventListener('click' , (e)=>{
+    e.preventDefault();
+    leftslide();
+}
+);
+
+
 chechWidth(3, slidecontainerWidth, slide);
 
 function chechWidth(count, slidehallwidth, contents) {
@@ -45,7 +54,12 @@ function next() {
     // 클래스네임으로 가져왔기 때문에 [0]해줘야함
     slideWrapper[0].style.transform = `translateX(-${index * (slideWidth + 32)}px)`;
 }
+}
 
+function leftslide() {
+    index--;
+    slideWrapper[0].style.transform = `translateX(-${index * (slideWidth + 32)}px)`;
+}
 
 
 
